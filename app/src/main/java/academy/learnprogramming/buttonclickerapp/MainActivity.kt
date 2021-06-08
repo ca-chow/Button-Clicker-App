@@ -21,5 +21,6 @@ class MainActivity : AppCompatActivity() { //"?" makes a variable a nullable typ
         button = findViewById<Button>(R.id.button)
         textView = findViewById<TextView>(R.id.textView)
 
+        //testing
     }
 }
