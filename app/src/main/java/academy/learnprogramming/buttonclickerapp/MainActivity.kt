@@ -12,6 +12,17 @@ private const val TAG = "MainActivity"
 private const val TEXT_CONTENTS = "TextContent"
 
 class MainActivity : AppCompatActivity() { //"?" makes a variable a nullable type
+private val TAG = "MainActivity"
+
+class MainActivity : AppCompatActivity() {
+    //"?" makes a variable a nullable type (or it can be null)
+    //we init variables to null because we don't know what values they will have until
+    // setContentView() runs
+
+    //Don't need the following code
+    //private var userInput: EditText? = null
+    //private var button: Button? = null
+    //private var timesClicked = 0
     private var textView: TextView? = null
     /* Can get rid of these variables because:
     private var userInput: EditText? = null //can be local property
@@ -25,6 +36,7 @@ class MainActivity : AppCompatActivity() { //"?" makes a variable a nullable typ
         //if onCreate can't finish using bundle, super method has a chance to work on the data
         setContentView(R.layout.activity_main) //uses "activity_main.xml" to create the layout
 
+        //the following is not the definitive way to do things
         //all widgets are views
         val userInput: EditText = findViewById<EditText>(R.id.editText)
         val button: Button = findViewById<Button>(R.id.button)
